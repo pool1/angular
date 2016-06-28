@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<style>
+    .ListItem:hover{
+    color:gray;
+    cursor:pointer;
+}
+</style>
+<div  ng-controller="appController">
+   
+    <section style=" position: fixed; width: 100%;height: 100%; margin: auto;">
+        
+   
+    <div  style=" width: 15%; height: 100%; background-color: white;  float: left; border-width: 2px;">
+        <li  id="my" class="ListItem"   ng-click="ondrage($event)" ng-repeat="data in myWelcome">{{data.name}}</li>    
+    </div>
+         
+       
+
+        <div   id="mydiv"    draggable="true" style="margin-left: 15%; height: 100%; background-color: whitesmoke;">
+        
+    </div>
+       
+    </section>      
+   
+</div>
