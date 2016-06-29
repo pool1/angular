@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en-US" ng-app="myAPP">
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<body>
+<html lang="en-US" >
+<head>
+	
 
-<div ng-controller="myController">
- 	
- 	
-</div>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.min.js"></script>
+ <script src="controller/angController.js"></script>
+</head>
+<body ng-app="myAPP">
+
+<div ng-view></div>
 
 </body>
 </html>
