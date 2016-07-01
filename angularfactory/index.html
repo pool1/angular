@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title> welcome</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="controller.js" ></script>
+
+</head>
+<body>
+<div ng-controller="myController">
+<div my-info></div>
+
+	
+	<input type="button"  ng-click="onclick()" >
+	<section ng-repeat="data in datas">
+		<h1> {{data.email}}</h1>
+
+	</section>
+		
+	
+</div>
+
+</body>
+</html>
